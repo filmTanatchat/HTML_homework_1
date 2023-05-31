@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul class="main-menu">
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="skill.html">Skill</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+        <ul class="register">
+            <li><a href="register_form.html">Register</a></li>
+        </ul>
+    </nav>
+
+    <h2 class="register">Register form</h2>
+    
+    <div class="form-container">
+        <form onsubmit="return validateForm()" action="index.html">
+            
+            <label>
+                <span>First Name:</span>
+                <input class="form-input" type="text" id="firstName" name="firstName" required>
+            </label>
+            
+            <label>
+                <span>Last Name:</span>
+                <input class="form-input" type="text" id="lastName" name="lastName" required>
+            </label>
+    
+            <label>
+                <span>Password:</span>
+                <input class="form-input" type="password" id="password" name="password" required>
+            </label>
+    
+            <label>
+                <span>Confirm Password:</span>
+                <input class="form-input" type="password" id="confirmPassword" name="confirmPassword" required>
+            </label>
+    
+            <label>
+                <span>Email:</span>
+                <input class="form-input" type="email" id="email" name="email" required>
+            </label>
+    
+            <label>
+                <span>Confirm Email:</span>
+                <input class="form-input" type="email" id="confirmEmail" name="confirmEmail" required>
+            </label>
+    
+            <label>
+                <span>Birthday:</span>
+                <input class="form-input" type="date" id="birthday" name="birthday" required>
+            </label>
+            
+            <div class="gender-field">
+                <label for="gender">Gender:</label>
+                <input class="male" type="radio" id="male" name="gender" value="male" checked required>
+                <label for="male">Male</label>
+                <input class="female" type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+            </div>
+    
+            <div class="buttons">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+    <footer>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
